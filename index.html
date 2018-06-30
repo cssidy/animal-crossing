@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Fauna - Vehicle Collisions</title>
+
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: .4em;
+        }
+        fieldset {
+            margin-bottom: 1em;
+            border: none;
+        }
+        fieldset.required {
+            background-color: honeydew;
+        }
+        legend {
+            padding: .4em 0;
+            font-weight: bold;
+        }
+        textarea {
+            width: 100%;
+        }
+        select {
+            width: 100%;
+        }
+
+        .title span {
+            display: block;
+            font-size: 60%;
+            font-style: italic;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1 class="title">Animal Crossing <span>Data visualizations of fauna-vehicle collisions to better understand migration patterns and preserve natural environments.</span></h1>
+
+
+    <h2>Heatmap</h2>
+
+    <div id="map"></div>
+
+
+
+    <h2>Report New Fauna-Vehicle Collision</h2>
+
+
+    <form action="" >
+
+        <fieldset class="required">
+            <legend>Taxon</legend>
+
+
+            <select size="15" required>
+                <option value="taxon_idontknow">I Don't Know</option>
+                <optgroup label="Reptile">
+                    <option value="taxon_snake">Snake</option>
+                    <option value="">Turtle</option>
+                    <option value="">Frog</option>
+                </optgroup>
+                <optgroup label="Mammal">
+                    <option value="taxon_squirrel">Squirrel</option>
+                    <option value="">Raccoon</option>
+                    <option value="">Beaver</option>
+                    <option value="">Fox</option>
+                    <option value="">Deer</option>
+                    <option value="">Moose</option>
+                </optgroup>
+                <option value="">Other</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Species</legend>
+            <label for="species_name">Species name:</label>
+            <input type="text" placeholder="Leave blank if unknown." id="species_name">
+        </fieldset>
+
+        <fieldset class="required">
+            <legend>Location</legend>
+            <!-- must convert address to lat/log -->
+            <label for="location">Location of sighting:</label>
+            <input type="text" placeholder="Enter an address." id="location" required>
+            <br>
+            <br>
+
+            <label for="geo_tag">Use geolocation data from browser? Devices with an internal GPS give the most accurate location.</label>
+            <input type="checkbox" name="geo" id="geo_tag" onclick="getGeo()">
+
+            <div id="geo_output"></div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Vehicle Collision</legend>
+            <label>Did you witness a vehicle collision causing human injury?</label>
+
+            <br>
+
+            <label for="yes_collision">Yes</label>
+            <input type="radio" name="collision" id="yes_collision">
+
+            <br>
+
+            <label for="no_collision">No</label>
+            <input type="radio" name="collision" id="no_collision">
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload Photo</legend>
+            <label for="notes">Upload photo:</label>
+            <input type="file">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Notes</legend>
+            <label for="notes">Additional notes:</label>
+            <br>
+            <textarea name="message" placeholder="Optional." rows="10" id="notes"></textarea>
+        </fieldset>
+
+
+        <fieldset>
+            <input type="submit" value="Submit sighting">
+        </fieldset>
+    </form>
+
+
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7O86UXOfVllTC2PWdrbZmo6EtE_FA5-o&libraries=visualization&callback=initMap"></script>
+    <script src="geolocation.js"></script>
+    <script src="heatmap.js"></script>
+
+</body>
+</html>
