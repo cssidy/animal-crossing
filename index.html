@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <title>Fauna - Vehicle Collisions</title>
+    <title>Animal Crossing</title>
 
     <style>
         /* Always set the map height explicitly to define the size of the div
@@ -12,7 +12,6 @@
             height: 500px;
             width: 100%;
         }
-        /* Optional: Makes the sample page fill the window. */
         html, body {
             height: 100%;
             margin: 0;
@@ -91,6 +90,17 @@
             <input type="text" placeholder="Leave blank if unknown." id="species_name">
         </fieldset>
 
+        <fieldset>
+            <legend>Date</legend>
+            <label for="species_name">Current time:</label>
+            <div id="date_output"></div>
+            <br>
+            <label for="custom_date">Enter other time:</label>
+            <input type="checkbox" name="geo" id="custom_date" onclick="makeDate()">
+            <div id="otherdate_output"></div>
+
+        </fieldset>
+
         <fieldset class="required">
             <legend>Location</legend>
             <!-- must convert address to lat/log -->
@@ -147,6 +157,7 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7O86UXOfVllTC2PWdrbZmo6EtE_FA5-o&libraries=visualization&callback=initMap"></script>
     <script src="geolocation.js"></script>
     <script src="heatmap.js"></script>
+    <script src="common.js"></script>
 
 </body>
 </html>
