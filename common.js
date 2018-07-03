@@ -37,7 +37,8 @@ function getGeo() {
         output.innerHTML = "Unable to retrieve your location.";
     }*/
     function errorCallback(error) {
-        alert('ERROR(' + error.code + '): ' + error.message);
+        output.innerHTML = '<p>There was an error obtaining your position.</p>';
+        console.log('ERROR CODE: ' + error.code + ': ' + error.message);
     };
     output.innerHTML = "<p>Asking for permission...</p>";
     navigator.geolocation.getCurrentPosition(success, errorCallback);
