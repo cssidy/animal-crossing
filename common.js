@@ -37,14 +37,9 @@ function getGeo() {
         output.innerHTML = "Unable to retrieve your location.";
     }*/
     function errorCallback(error) {
-        if (error.code == 1) {
-            output.innerHTML = '<p>Access denied.</p>';
-        } else if (error.code == 2) {
-            output.innerHTML = '<p>Error: position unavailable.</p>';
-        } else (error.code == 3){
-            output.innerHTML = '<p>Error: query timeout.</p>';
-        }
-    }
+        output.innerHTML = '<p>There was an error obtaining your position.</p>';
+        console.log('ERROR CODE: ' + error.code + ': ' + error.message);
+    };
     output.innerHTML = "<p>Asking for permission...</p>";
     navigator.geolocation.getCurrentPosition(success, errorCallback);
 }
