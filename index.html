@@ -90,14 +90,14 @@
             <input type="text" placeholder="Leave blank if unknown." id="species_name">
         </fieldset>
 
-        <fieldset>
+        <fieldset class="required">
             <legend>Date</legend>
             <label for="species_name">Current time:</label>
-            <div id="date_output"></div>
+            <span id="date_output"></span>
             <br>
             <label for="custom_date">Enter other time:</label>
             <input type="checkbox" name="geo" id="custom_date" onclick="makeDate()">
-            <div id="otherdate_output"></div>
+            <span id="otherdate_output"></span>
 
         </fieldset>
 
@@ -109,7 +109,7 @@
             <br>
             <br>
 
-            <label for="geo_tag">Use geolocation data from browser? Devices with an internal GPS give the most accurate location.</label>
+            <label for="geo_tag">Use geolocation data from browser/device?</label>
             <input type="checkbox" name="geo" id="geo_tag" onclick="getGeo()">
 
             <div id="geo_output"></div>
@@ -155,8 +155,6 @@
 
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7O86UXOfVllTC2PWdrbZmo6EtE_FA5-o&libraries=visualization&callback=initMap"></script>
-    <script src="geolocation.js"></script>
-    <script src="heatmap.js"></script>
     <script src="common.js"></script>
 
 </body>
