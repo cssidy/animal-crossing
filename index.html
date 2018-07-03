@@ -105,7 +105,7 @@
             <legend>Location</legend>
             <!-- must convert address to lat/log -->
             <label for="location">Location of sighting:</label>
-            <input type="text" placeholder="Enter an address." id="location" required>
+            <input type="text" placeholder="Enter an address." id="location">
             <br>
             <br>
 
@@ -147,7 +147,7 @@
 
 
         <fieldset>
-            <input type="submit" value="Submit sighting">
+            <button onclick="submitForm(); return false;">Submit</button>
         </fieldset>
     </form>
 

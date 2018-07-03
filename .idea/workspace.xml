@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf620f2f-7d3c-453e-92f6-f773ad0ec448" name="Default" comment="" />
+    <list default="true" id="bf620f2f-7d3c-453e-92f6-f773ad0ec448" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="125" column="68" lean-forward="true" selection-start-line="125" selection-start-column="68" selection-end-line="125" selection-end-column="68" />
+            <state relative-caret-position="579">
+              <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -26,8 +30,8 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            <state relative-caret-position="1029">
+              <caret line="612" column="1" selection-start-line="612" selection-start-column="1" selection-end-line="612" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -53,11 +57,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/geolocation.js" />
+        <option value="$PROJECT_DIR$/heatmap.js" />
+        <option value="$PROJECT_DIR$/geolocation.js" />
+        <option value="$PROJECT_DIR$/heatmap.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/geolocation.js" />
-        <option value="$PROJECT_DIR$/heatmap.js" />
-        <option value="$PROJECT_DIR$/geolocation.js" />
-        <option value="$PROJECT_DIR$/heatmap.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/common.js" />
       </list>
@@ -73,8 +77,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="410" />
-    <option name="y" value="443" />
+    <option name="x" value="899" />
+    <option name="y" value="164" />
     <option name="width" value="1932" />
     <option name="height" value="1180" />
   </component>
@@ -128,15 +132,16 @@
       <option name="presentableId" value="Default" />
       <updated>1530391286110</updated>
       <workItem from="1530391288169" duration="10949000" />
-      <workItem from="1530584188131" duration="1217000" />
+      <workItem from="1530584188131" duration="2845000" />
+      <workItem from="1530627500134" duration="3778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12166000" />
+    <option name="totallyTimeSpent" value="17572000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="410" y="443" width="1932" height="1180" extended-state="0" />
+    <frame x="899" y="164" width="1932" height="1180" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17443064" />
@@ -167,6 +172,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="101" column="19" lean-forward="true" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
@@ -179,40 +198,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geolocation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heatmap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/geolocation.js" />
+    <entry file="file://$PROJECT_DIR$/heatmap.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/heatmap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geolocation.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/heatmap.js" />
+    <entry file="file://$PROJECT_DIR$/geolocation.js" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="125" column="68" lean-forward="true" selection-start-line="125" selection-start-column="68" selection-end-line="125" selection-end-column="68" />
+        <state relative-caret-position="579">
+          <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        <state relative-caret-position="1029">
+          <caret line="612" column="1" selection-start-line="612" selection-start-column="1" selection-end-line="612" selection-end-column="1" />
         </state>
       </provider>
     </entry>
