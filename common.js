@@ -33,8 +33,16 @@ function getGeo() {
         var longitude = position.coords.longitude;
         output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
     }
-    function error() {
+    /*function error() {
         output.innerHTML = "Unable to retrieve your location.";
+    }*/
+    function error(err) {
+        if(err.code == 1) {
+            alert("Error: Access is denied!");
+        }
+        else if( err.code == 2) {
+            alert("Error: Position is unavailable!");
+        }
     }
     output.innerHTML = "<p>Asking for permission...</p>";
     navigator.geolocation.getCurrentPosition(success, error);
