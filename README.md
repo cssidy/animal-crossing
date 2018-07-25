@@ -23,7 +23,7 @@ Data visualizations to understand fauna-vehicle collisions.
 
 * JavaScript - For most everything
 
-## Installation
+## Use Instructions
 
 Instructions will be added here soon.
 
