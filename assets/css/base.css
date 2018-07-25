@@ -16,7 +16,6 @@ body {
 }
 html, body, #map {
     height: 400px;
-    width: 100vw;
 }
 
 html, body {
@@ -46,20 +45,6 @@ h1 {
 
 h2, h3, h4, h5, h6, p {
     font-family: 'Roboto', Helvetica, sans-serif;
-}
-
-.title_container {
-    overflow: hidden;
-    height: 200px;
-    width: 100%;
-    background-color: #A19951;
-    text-align: right;
-}
-
-.title_container h1 {
-    font-size: 720%;
-    color: #F0E3CE;
-    font-weight: inherit;
 }
 
 .special_message {
@@ -114,21 +99,70 @@ form {
 .creature_set li span {
 }
 
+.title_container {
+    overflow: hidden;
+    height: 150px;
+    width: 100%;
+    background-color: #A19951;
+    text-align: right;
+}
+
+.title_container h1 {
+    font-size: 540%;
+    color: #F0E3CE;
+    font-weight: inherit;
+}
+
+/*
+
+.title_container_bottom {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 200px;
+    padding-left: .75em;
+    height: 100px;
+    width: 100%;
+    background-color: #A19951;
+    text-align: right;
+}
+
+.title_container_bottom h1 {
+    font-size: 700%;
+    color: #F0E3CE;
+    font-weight: inherit;
+    position: relative;
+    top: 0;
+}
+
+*/
+
+
+#myDiv {
+    display: none;
+}
+
+#loader_container {
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    background: url("../../images/fauna.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
 #loader {
     position: absolute;
     left: 50%;
     top: 50%;
     z-index: 1;
-    width: 150px;
-    height: 150px;
     margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
+    border: 16px solid #FAFFF2;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    border-top: 16px solid #CBE69E;
+    width: 130px;
+    height: 130px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -160,8 +194,4 @@ form {
     to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
-    display: none;
-    text-align: center;
-}
 

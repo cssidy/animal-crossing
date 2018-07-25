@@ -11,14 +11,27 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
           integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
           crossorigin=""/>
-
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+            integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+            crossorigin=""></script>
 
 </head>
-<body>
+<body onload="myFunction()">
 
-<section class="loader"></section>
+<section id="loader_container">
+    <div id="loader"></div>
+    <!--
+    <section class="title_container title_container_bottom">
+        <h1 class="title">appfauna</h1>
+    </section>
+    -->
+</section>
 
 
+
+
+<main style="display:none;" id="myDiv" class="animate-bottom">
 
     <nav>
         <a href="index.html">Map</a>
@@ -50,15 +63,28 @@
         <button class="report-btn">Report Sighting</button>
     </div>
 
-<!-- Make sure you put this AFTER Leaflet's CSS -->
-<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
-        integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
-        crossorigin=""></script>
 
-<script type="javascript">
-    var mymap = L.map('map').setView([51.505, -0.09], 13);
-</script>
+</main>
+
+    <script type="javascript">
+        var mymap = L.map('map').setView([51.505, -0.09], 13);
+    </script>
 
     <script src="assets/js/common.js"></script>
+
+
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader_container").style.display = "none";
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 </body>
 </html>
