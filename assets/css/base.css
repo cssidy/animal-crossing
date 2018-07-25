@@ -4,10 +4,17 @@
 
 #map {
     background-color: #FAFFF2;
+    position: relative;
 }
 
-.map_filters, .map_controls {
+.map_controls {
     margin: 1em;
+    z-index: 10;
+    position: absolute;
+}
+
+.map_filters button {
+    display: block;
 }
 
 body {
@@ -15,7 +22,8 @@ body {
     margin: 0;
 }
 html, body, #map {
-    height: 400px;
+    height: 100%;
+    min-height: 400px;
 }
 
 html, body {
@@ -45,6 +53,7 @@ h1 {
 
 h2, h3, h4, h5, h6, p {
     font-family: 'Roboto', Helvetica, sans-serif;
+    margin: 0;
 }
 
 .special_message {
@@ -59,6 +68,7 @@ h2, h3, h4, h5, h6, p {
 
 .report-btn {
     padding: 1em 2em;
+    margin-top: 1em;
     width: 75%;
     color: #fff;
     background: #555;
@@ -101,14 +111,16 @@ form {
 
 .title_container {
     overflow: hidden;
-    height: 150px;
+    height: 80px;
     width: 100%;
     background-color: #A19951;
     text-align: right;
 }
 
 .title_container h1 {
-    font-size: 540%;
+    font-size: 70px;
+    margin: 0;
+    margin-top: 13px;
     color: #F0E3CE;
     font-weight: inherit;
 }
