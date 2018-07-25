@@ -7,7 +7,7 @@ Data visualizations to understand fauna-vehicle collisions.
 
 ![Loading page](https://github.com/cssidy/appfauna/blob/master/images/loading.png) 
 
-#### Main page, heatmaps
+### Main page, heatmaps
 
 ![Heatmap page](https://github.com/cssidy/appfauna/blob/master/images/heatmap.png) 
 
