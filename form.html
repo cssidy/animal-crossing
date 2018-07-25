@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>appfauna</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Roboto:300" rel="stylesheet">
+
+</head>
+<body class="form_body">
+
+<nav>
+    <a href="index.html">Map</a>
+    <a href="form.html">Report</a>
+</nav>
+
+<section class="title_container">
+    <h1 class="title">appfauna</h1>
+</section>
+
+
+<form action="" >
+    <h2>Report Sighting</h2>
+    <fieldset class="required">
+        <legend>Taxon</legend>
+        <ul class="creature_set">
+            <li>
+                <img src="">
+                <span>Unknown</span>
+            </li>
+            <li>Other</li>
+            <li>Mammal</li>
+            <li>Reptile</li>
+            <li>Avian</li>
+            <li>Amphipian</li>
+            <li>Fish</li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Species</legend>
+            <ul class="creature_set">
+                <li>Unknown</li>
+                <li>Other</li>
+                <li>Squirrel</li>
+                <li>Raccoon</li>
+                <li>Deer</li>
+                <li>Moose</li>
+                <li>Bear</li>
+                <li>Fox</li>
+            </ul>
+        <label for="species_name">Species name:</label>
+        <input type="text" placeholder="Leave blank if unknown." id="species_name">
+    </fieldset>
+
+    <fieldset class="required">
+        <legend>Date</legend>
+        <label for="species_name">Current time:</label>
+        <span id="date_output"></span>
+
+        <!--
+        <br>
+        <label for="custom_date">Enter other time:</label>
+        <input type="checkbox" name="geo" id="custom_date" onclick="makeDate()">
+        <span id="otherdate_output"></span>
+        -->
+    </fieldset>
+
+    <fieldset class="required">
+        <legend>Location</legend>
+        <!-- must convert address to lat/log -->
+        <!--
+        <label for="location">Location of sighting:</label>
+        <input type="text" placeholder="Enter an address." id="location">
+        <br>
+        <br>
+        -->
+        <label for="geo_tag">Use geolocation data from browser/device?</label>
+        <input type="checkbox" name="geo" id="geo_tag" onclick="getGeo()">
+
+        <div id="geo_output"></div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Vehicle Collision</legend>
+        <label>Did you witness a vehicle collision causing human injury?</label>
+
+        <br>
+        <br>
+
+        <label for="yes_collision">Yes</label>
+        <input type="radio" name="collision" id="yes_collision">
+        <br>
+        <label for="no_collision">No</label>
+        <input type="radio" name="collision" id="no_collision">
+    </fieldset>
+
+    <fieldset>
+        <legend>Notes</legend>
+        <label for="notes">Additional notes:</label>
+        <br>
+        <textarea name="message" placeholder="Optional." rows="10" id="notes"></textarea>
+    </fieldset>
+
+
+    <div class="vertically-centered">
+        <button class="report-btn">Report Sighting</button>
+    </div>
+</form>
+
+
+    <script src="assets/js/common.js"></script>
+</body>
+</html>

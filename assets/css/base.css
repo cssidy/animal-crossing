@@ -1,0 +1,167 @@
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+
+#map {
+    background-color: #FAFFF2;
+}
+
+.map_filters, .map_controls {
+    margin: 1em;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    height: 400px;
+    width: 100vw;
+}
+
+html, body {
+    margin: 0;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+fieldset {
+    margin-bottom: 1em;
+    border: none;
+}
+fieldset.required {
+    /* background-color: honeydew; */
+}
+legend {
+    font-weight: bold;
+}
+textarea {
+    width: 100%;
+}
+select {
+    width: 100%;
+}
+
+h1 {
+    font-family: "Goudy Bookletter 1911", Georgia, serif;
+}
+
+h2, h3, h4, h5, h6, p {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.title_container {
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+    background-color: #A19951;
+    text-align: right;
+}
+
+.title_container h1 {
+    font-size: 720%;
+    color: #F0E3CE;
+    font-weight: inherit;
+}
+
+.special_message {
+    color: #FF7600;
+}
+
+.vertically-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-btn {
+    padding: 1em 2em;
+    width: 75%;
+    color: #fff;
+    background: #555;
+    border: none;
+    text-align: center;
+
+}
+
+.form_body {
+    background-color: #FAFFF2;
+}
+
+form {
+    margin: 1em;
+}
+
+.creature_set {
+    overflow-x: auto;
+    margin: 0;
+    padding: 0 0 .5em 0;
+    list-style-type: none;
+    min-width: 100%;
+    min-height: 80px;
+    display: flex;
+}
+
+.creature_set::-webkit-scrollbar {
+    /* display: none; */
+}
+
+.creature_set li {
+    float: left;
+    background-color: #909090;
+    min-width: 80px;
+    margin: 5px;
+}
+
+.creature_set li span {
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+

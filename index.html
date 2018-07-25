@@ -2,160 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <title>Animal Crossing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <style>
-        /* Always set the map height explicitly to define the size of the div
-         * element that contains the map. */
-        #map {
-            height: 500px;
-            width: 100%;
-        }
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: .4em;
-        }
-        fieldset {
-            margin-bottom: 1em;
-            border: none;
-        }
-        fieldset.required {
-            background-color: honeydew;
-        }
-        legend {
-            padding: .4em 0;
-            font-weight: bold;
-        }
-        textarea {
-            width: 100%;
-        }
-        select {
-            width: 100%;
-        }
+    <title>appfauna</title>
 
-        .title span {
-            display: block;
-            font-size: 60%;
-            font-style: italic;
-        }
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
 
-    </style>
 
 </head>
 <body>
 
-    <h1 class="title">Animal Crossing <span>Data visualizations of fauna-vehicle collisions to better understand migration patterns and preserve natural environments.</span></h1>
+<section class="loader"></section>
 
 
-    <h2>Heatmap</h2>
+
+    <nav>
+        <a href="index.html">Map</a>
+        <a href="form.html">Report</a>
+    </nav>
+
+    <section class="title_container">
+        <h1 class="title">appfauna</h1>
+    </section>
+
+    <section class="map_controls">
+        <h2>Heatmap</h2>
+        <input type="text" placeholder="Enter location.">
+    </section>
 
     <div id="map"></div>
 
 
-
-    <h2>Report New Fauna-Vehicle Collision</h2>
-
-
-    <form action="" >
-
-        <fieldset class="required">
-            <legend>Taxon</legend>
-
-
-            <select size="15" required>
-                <option value="taxon_idontknow">I Don't Know</option>
-                <optgroup label="Reptile">
-                    <option value="taxon_snake">Snake</option>
-                    <option value="">Turtle</option>
-                    <option value="">Frog</option>
-                </optgroup>
-                <optgroup label="Mammal">
-                    <option value="taxon_squirrel">Squirrel</option>
-                    <option value="">Raccoon</option>
-                    <option value="">Beaver</option>
-                    <option value="">Fox</option>
-                    <option value="">Deer</option>
-                    <option value="">Moose</option>
-                </optgroup>
-                <option value="">Other</option>
-            </select>
-
-        </fieldset>
-
-        <fieldset>
-            <legend>Species</legend>
-            <label for="species_name">Species name:</label>
-            <input type="text" placeholder="Leave blank if unknown." id="species_name">
-        </fieldset>
-
-        <fieldset class="required">
-            <legend>Date</legend>
-            <label for="species_name">Current time:</label>
-            <span id="date_output"></span>
-            <br>
-            <label for="custom_date">Enter other time:</label>
-            <input type="checkbox" name="geo" id="custom_date" onclick="makeDate()">
-            <span id="otherdate_output"></span>
-
-        </fieldset>
-
-        <fieldset class="required">
-            <legend>Location</legend>
-            <!-- must convert address to lat/log -->
-            <label for="location">Location of sighting:</label>
-            <input type="text" placeholder="Enter an address." id="location">
-            <br>
-            <br>
-
-            <label for="geo_tag">Use geolocation data from browser/device?</label>
-            <input type="checkbox" name="geo" id="geo_tag" onclick="getGeo()">
-
-            <div id="geo_output"></div>
-
-        </fieldset>
-
-        <fieldset>
-            <legend>Vehicle Collision</legend>
-            <label>Did you witness a vehicle collision causing human injury?</label>
-
-            <br>
-
-            <label for="yes_collision">Yes</label>
-            <input type="radio" name="collision" id="yes_collision">
-
-            <br>
-
-            <label for="no_collision">No</label>
-            <input type="radio" name="collision" id="no_collision">
-        </fieldset>
-
-        <fieldset>
-            <legend>Upload Photo</legend>
-            <label for="notes">Upload photo:</label>
-            <input type="file">
-        </fieldset>
+    <section class="map_filters">
+        <h2>Filters</h2>
+        <button>Spring</button>
+        <button>Summer</button>
+        <button>Fall</button>
+        <button>Winter</button>
+    </section>
 
 
-        <fieldset>
-            <legend>Notes</legend>
-            <label for="notes">Additional notes:</label>
-            <br>
-            <textarea name="message" placeholder="Optional." rows="10" id="notes"></textarea>
-        </fieldset>
+    <div class="vertically-centered">
+        <button class="report-btn">Report Sighting</button>
+    </div>
 
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+        integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+        crossorigin=""></script>
 
-        <fieldset>
-            <button onclick="submitForm(); return false;">Submit</button>
-        </fieldset>
-    </form>
+<script type="javascript">
+    var mymap = L.map('map').setView([51.505, -0.09], 13);
+</script>
 
-
-
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7O86UXOfVllTC2PWdrbZmo6EtE_FA5-o&libraries=visualization&callback=initMap"></script>
-    <script src="common.js"></script>
-
+    <script src="assets/js/common.js"></script>
 </body>
 </html>
