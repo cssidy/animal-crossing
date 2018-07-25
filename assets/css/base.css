@@ -1,16 +1,17 @@
 
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
-
 #map {
-    background-color: #FAFFF2;
+    /* background-color: #FAFFF2; */
     position: relative;
+    height: 400px;
+    z-index:2;
 }
 
 .map_controls {
-    margin: 1em;
+    margin: 5em 1em;
     z-index: 10;
     position: absolute;
+    background: #fff;
+    padding: 1em;
 }
 
 .map_filters button {
@@ -21,7 +22,7 @@ body {
     padding: 0;
     margin: 0;
 }
-html, body, #map {
+html, body {
     height: 100%;
     min-height: 400px;
 }
