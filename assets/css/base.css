@@ -54,7 +54,6 @@ h1 {
 
 h2, h3, h4, h5, h6, p {
     font-family: 'Roboto', Helvetica, sans-serif;
-    margin: 0;
 }
 
 .special_message {
@@ -68,14 +67,22 @@ h2, h3, h4, h5, h6, p {
 }
 
 .report-btn {
-    padding: 1em 2em;
+    padding: .5em 1em;
     margin-top: 1em;
-    width: 75%;
-    color: #fff;
-    background: #555;
+    width: 50%;
+    font-size: 20px;
+    border-radius: .5em;
+    color: #F0E3CE;
+    background: #A19951;
     border: none;
     text-align: center;
+    cursor: pointer;
+    font-family: 'Vollkorn', serif;
+}
 
+.report-btn:hover {
+    background: #847E43;
+    color: #fff;
 }
 
 .form_body {
@@ -94,10 +101,6 @@ form {
     min-width: 100%;
     min-height: 80px;
     display: flex;
-}
-
-.creature_set::-webkit-scrollbar {
-    /* display: none; */
 }
 
 .creature_set li {
@@ -126,85 +129,17 @@ form {
     font-weight: inherit;
 }
 
-/*
-
-.title_container_bottom {
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 200px;
-    padding-left: .75em;
-    height: 100px;
-    width: 100%;
-    background-color: #A19951;
-    text-align: right;
-}
-
-.title_container_bottom h1 {
-    font-size: 700%;
-    color: #F0E3CE;
-    font-weight: inherit;
-    position: relative;
-    top: 0;
-}
-
-*/
-
-
-#myDiv {
-    display: none;
-}
-
-#loader_container {
-    height: 100%;
-    width: 100vw;
-    position: fixed;
-    background: url("../../images/fauna.jpg") no-repeat fixed;
-    background-size: cover;
-}
-
-#loader {
+nav {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    margin: -75px 0 0 -75px;
-    border: 16px solid #FAFFF2;
-    border-radius: 50%;
-    border-top: 16px solid #CBE69E;
-    width: 130px;
-    height: 130px;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
+    top: 10px;
+    left: 10px;
 }
 
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 }
-    to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom {
-    from{ bottom:-100px; opacity:0 }
-    to{ bottom:0; opacity:1 }
-}
 
 
