@@ -1,16 +1,18 @@
+body {
+    padding-bottom: 5em;
+}
+
 
 #map {
     /* background-color: #FAFFF2; */
-    position: relative;
-    height: 400px;
+    height: 600px;
     z-index:2;
 }
 
 .map_controls {
-    margin: 5em 1em;
+    margin: 5em 0;
     z-index: 10;
     position: absolute;
-    background: #fff;
     padding: 1em;
 }
 
