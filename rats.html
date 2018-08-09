@@ -1,9 +1,14 @@
 <html>
 <head>
     <title>A Leaflet map!</title>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+          integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+            integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+            crossorigin=""></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/leaflet.heat.js"></script>
     <style>
         #map{ height: 100% }
     </style>
@@ -25,10 +30,17 @@
             minZoom: 9
         }).addTo(map);
 
-    // load GeoJSON from an external file
+    map.setZoom(12);
     $.getJSON("rodents.geojson",function(data){
-        // add GeoJSON layer to the map once the file is loaded
-        L.geoJson(data).addTo(map);
+        var locations = data.features.map(function(rat) {
+            // the heatmap plugin wants an array of each location
+            var location = rat.geometry.coordinates.reverse();
+            location.push(0.5);
+            return location; // e.g. [50.5, 30.5, 0.2], // lat, lng, intensity
+        });
+
+        var heat = L.heatLayer(locations, { radius: 35 });
+        map.addLayer(heat);
     });
 
 </script>
