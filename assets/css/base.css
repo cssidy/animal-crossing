@@ -15,6 +15,52 @@ body {
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
+.title_container {
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    background-color: #A19951;
+    text-align: right;
+}
+
+.title_container h1 {
+    font-size: 70px;
+    margin: 0;
+    margin-top: 13px;
+    color: #F0E3CE;
+    font-weight: inherit;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+@media (min-width: 600px) {
+    nav {
+        top: 50px;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: "Goudy Bookletter 1911", Georgia, serif;
+}
+
+h2, h3, h4, h5, h6, p {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.special_message {
+    color: #FF7600;
+}
+
 fieldset {
     margin-bottom: 1em;
     border: none;
@@ -30,18 +76,6 @@ textarea {
 }
 select {
     width: 100%;
-}
-
-h1 {
-    font-family: "Goudy Bookletter 1911", Georgia, serif;
-}
-
-h2, h3, h4, h5, h6, p {
-    font-family: 'Roboto', Helvetica, sans-serif;
-}
-
-.special_message {
-    color: #FF7600;
 }
 
 /*
@@ -100,39 +134,6 @@ form {
 .creature_set li span {
 }
 
-.title_container {
-    overflow: hidden;
-    height: 80px;
-    width: 100%;
-    background-color: #A19951;
-    text-align: right;
-}
-
-.title_container h1 {
-    font-size: 70px;
-    margin: 0;
-    margin-top: 13px;
-    color: #F0E3CE;
-    font-weight: inherit;
-}
-
-nav {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-@media (min-width: 600px) {
-    nav {
-        top: 50px;
-    }
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 10px;
-}
 
 
 
