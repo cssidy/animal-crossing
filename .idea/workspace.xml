@@ -46,8 +46,8 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="111">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -186,12 +186,12 @@
       <updated>1532482610343</updated>
       <workItem from="1532482611640" duration="7852000" />
       <workItem from="1533764176693" duration="4318000" />
-      <workItem from="1534210830323" duration="1727000" />
+      <workItem from="1534210830323" duration="1849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13897000" />
+    <option name="totallyTimeSpent" value="14019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="450" y="568" width="1997" height="824" extended-state="0" />
@@ -391,8 +391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state relative-caret-position="111">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
         </state>
       </provider>
     </entry>
