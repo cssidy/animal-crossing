@@ -59,6 +59,7 @@
 
         function eqfeed_callback(results) {
             var heatmapData = [];
+            console.log(results.features.geometry.coordinates);
             for (var i = 0; i < results.features.length; i++) {
                 console.log(results.features[i].geometry.coordinates);
                 var coords = results.features[i].geometry.coordinates;
