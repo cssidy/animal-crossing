@@ -1,4 +1,4 @@
-
+/*
 .map_controls {
     margin: 5em 0;
     z-index: 10;
@@ -9,6 +9,7 @@
 .map_filters button {
     display: block;
 }
+*/
 
 body {
     font-family: "Roboto", Helvetica, sans-serif;
@@ -43,6 +44,7 @@ h2, h3, h4, h5, h6, p {
     color: #FF7600;
 }
 
+/*
 .vertically-centered {
     display: flex;
     justify-content: center;
@@ -63,10 +65,12 @@ h2, h3, h4, h5, h6, p {
     font-family: 'Vollkorn', serif;
 }
 
+
 .report-btn:hover {
     background: #847E43;
     color: #fff;
 }
+*/
 
 .form_body {
     background-color: #FAFFF2;
