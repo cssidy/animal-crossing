@@ -1,4 +1,3 @@
-
 // get geolocation, date and time from user's device
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -37,17 +36,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
