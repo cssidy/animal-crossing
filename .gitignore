@@ -8,8 +8,8 @@
 .idea/modules.xml
 .idea/vcs.xml
 .idea/dictionaries
-.idea/javascript.iml
-.idea/workspace.iml
+.idea/javascript.xml
+.idea/workspace.xml
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
