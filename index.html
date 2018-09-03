@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
     <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Roboto:300" rel="stylesheet">
-    <script src="http://cassidybrooke.net/appfauna//assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json"></script>
 
     <style>
         /* Always set the map height explicitly to define the size of the div
@@ -59,6 +58,29 @@
 
         }
 
+
+
+        fetch("assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json").then(response => response.json()).then(
+            function(json) {
+                let heatmapData = [];
+                console.log(json.features[2].geometry.coordinates);
+                for (var i = 0; i < json.features.length; i++) {
+                    console.log(json.features[i].geometry.coordinates);
+                    var coords = json.features[i].geometry.coordinates;
+                    var latLng = new google.maps.LatLng(coords[1], coords[0]);
+                    heatmapData.push(latLng);
+                }
+                var heatmap = new google.maps.visualization.HeatmapLayer({
+                    data: heatmapData,
+                    dissipating: false,
+                    map: index,
+                    radius: 20
+                });
+            }
+        );
+
+
+/*
         function eqfeed_callback(results) {
             var heatmapData = [];
             console.log(results.features[2].geometry.coordinates);
@@ -74,6 +96,7 @@
                 map: index
             });
         }
+        */
     </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgHBFFMALSRVnZ94XYGTQhu6-7xhvvDI&libraries=visualization&callback=initMap">
