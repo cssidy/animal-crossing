@@ -42,12 +42,12 @@
         var map, heatmap;
           function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 2,
-              center: {lat: 37.775, lng: -122.434},
-              mapTypeId: 'roadmap'
+              zoom: 7,
+              center: {lat: 44.558803, lng: -72.577841},
+              //mapTypeId: 'terrain'
             });
-            fetch('assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json').then(function(response) {
-              response.json().then(function(result) {
+           fetch("assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json").then(response => response.json())
+               .then(function(json) {
                 let heatmapData = [];
                     console.log(json.features[2].geometry.coordinates);
                     for (var i = 0; i < json.features.length; i++) {
