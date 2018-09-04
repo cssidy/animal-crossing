@@ -48,16 +48,14 @@
             });
             fetch('assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json').then(function(response) {
               response.json().then(function(result) {
-                let locations = result.locations.map((val) => {
-                  return new google.maps.LatLng(val.latitudeE7 * (10 ** -7), val.longitudeE7 * (10 ** -7));
-                })
-                heatmap = new google.maps.visualization.HeatmapLayer({
-                  data: locations,
-                  map: map,
-                  maxIntensity: 25,
-                  radius: 42,
-                  opacity: 0.4
-                });
+                let heatmapData = [];
+                    console.log(json.features[2].geometry.coordinates);
+                    for (var i = 0; i < json.features.length; i++) {
+                        console.log(json.features[i].geometry.coordinates);
+                        var coords = json.features[i].geometry.coordinates;
+                        var latLng = new google.maps.LatLng(coords[1], coords[0]);
+                        heatmapData.push(latLng);
+                    }
               });
             });
           }
