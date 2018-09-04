@@ -46,6 +46,7 @@
               center: {lat: 44.558803, lng: -72.577841},
               //mapTypeId: 'terrain'
             });
+              
            fetch("assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json").then(response => response.json())
                .then(function(json) {
                 let heatmapData = [];
@@ -57,7 +58,6 @@
                         heatmapData.push(latLng);
                     }
               });
-            });
           }
         
         /*
