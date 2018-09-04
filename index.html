@@ -39,6 +39,30 @@
     <div id="map"></div>
 
     <script>
+        var map, heatmap;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 2,
+              center: {lat: 37.775, lng: -122.434},
+              mapTypeId: 'roadmap'
+            });
+            fetch('assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json').then(function(response) {
+              response.json().then(function(result) {
+                let locations = result.locations.map((val) => {
+                  return new google.maps.LatLng(val.latitudeE7 * (10 ** -7), val.longitudeE7 * (10 ** -7));
+                })
+                heatmap = new google.maps.visualization.HeatmapLayer({
+                  data: locations,
+                  map: map,
+                  maxIntensity: 25,
+                  radius: 42,
+                  opacity: 0.4
+                });
+              });
+            });
+          }
+        
+        /*
         var map;
         
         function initMap() {
