@@ -39,10 +39,10 @@
     <div id="map"></div>
 
     <script>
-        var map, heatmap;
+        var map;
         
         function initMap() {
-            index = new google.maps.Map(document.getElementById('map'), {
+            map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 8,
                 center: {lat: 44.558803, lng: -72.577841},
                 mapTypeId: 'terrain'
@@ -83,23 +83,6 @@
         
 
 
-/*
-        function eqfeed_callback(results) {
-            var heatmapData = [];
-            console.log(results.features[2].geometry.coordinates);
-            for (var i = 0; i < results.features.length; i++) {
-                console.log(results.features[i].geometry.coordinates);
-                var coords = results.features[i].geometry.coordinates;
-                var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                heatmapData.push(latLng);
-            }
-            var heatmap = new google.maps.visualization.HeatmapLayer({
-                data: heatmapData,
-                dissipating: false,
-                map: index
-            });
-        }
-        */
     </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgHBFFMALSRVnZ94XYGTQhu6-7xhvvDI&libraries=visualization&callback=initMap">
