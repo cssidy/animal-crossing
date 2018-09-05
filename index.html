@@ -52,7 +52,7 @@
 
 <script>
     const maxI = 10, rad = 6, opac = .6;
-    var map, heatmap;
+    let map, heatmap;
 
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -66,10 +66,10 @@
                 let heatMapData = [];
                 console.log(json.features[2].geometry.coordinates);
 
-                for (var i = 0; i < json.features.length; i++) {
+                for (let i = 0; i < json.features.length; i++) {
                     console.log(json.features[i].geometry.coordinates);
-                    var coords = json.features[i].geometry.coordinates;
-                    var latLng = new google.maps.LatLng(coords[1], coords[0]);
+                    let coords = json.features[i].geometry.coordinates;
+                    let latLng = new google.maps.LatLng(coords[1], coords[0]);
                     heatMapData.push(latLng);
                 }
 
@@ -83,12 +83,7 @@
             });
     }
 
-    const reportBtn = document.getElementsByClassName('report-btn');
-    reportBtn.addEventListener('click', function() {
-        alert("This feature is coming soon.");
-    })
-
-
+    
 </script>
 
 <script async defer
