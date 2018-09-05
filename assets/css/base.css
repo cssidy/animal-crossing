@@ -18,6 +18,14 @@ body {
     font-weight: inherit;
 }
 
+.title_container h3 {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    text-align: left;
+    padding: 1em;
+}
+
 nav {
     padding: 1em;
     background-color: #E7D8CA;
@@ -55,6 +63,10 @@ nav a:hover {
 @media(max-width: 500px) {
     .report-btn {
         width: 100%;
+    }
+    .title_container h3 {
+        padding: 0 1em;
+        font-size: 13px;
     }
 }
 
