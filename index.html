@@ -28,22 +28,17 @@
 <main>
     <section class="title_container">
         <h1 class="title">appfauna</h1>
-        <!--
-        <nav>
-            <h2>Roadkill in Vermont, 2006, Data source: <a href="https://maps.vcgi.vermont.gov/arcgis/rest/services/EGC_services/OPENDATA_VCGI_ECOLOGIC_SP_NOCACHE_v1/MapServer/10">maps.vcgi.vermont.gov</a></h2>
-            <p>This heatmap illustrates the location and density of fauna-vehicle collisions (roadkill) collected in 2006 by the Vermont Department of Fish and Wildlife and Vermont Agency of Transportation.</p>
-            <p>I am seeking a current and continuous dataset to better understand factors that contribute to roadkill, and ultimately reduce roadkill in Vermont.</p>
-            <a class="report-btn" href="report.html">Report Roadkill</a>
-        </nav>
-        -->
     </section>
 </main>
 
-
-
 <div id="map"></div>
 
-
+<nav>
+    <h2>Roadkill in Vermont, 2006, Data source: <a href="https://maps.vcgi.vermont.gov/arcgis/rest/services/EGC_services/OPENDATA_VCGI_ECOLOGIC_SP_NOCACHE_v1/MapServer/10">maps.vcgi.vermont.gov</a></h2>
+    <p>This heatmap illustrates the location and density of fauna-vehicle collisions (roadkill) collected in 2006 by the Vermont Department of Fish and Wildlife and Vermont Agency of Transportation.</p>
+    <p>I am seeking a current and continuous dataset to better understand factors that contribute to roadkill, and ultimately reduce roadkill in Vermont.</p>
+    <a class="report-btn" href="report.html">Report Roadkill</a>
+</nav>
 
 <script>
     const maxI = 10, rad = 6, opac = .6;
@@ -78,11 +73,14 @@
             });
     }
 
+
+
 </script>
 
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgHBFFMALSRVnZ94XYGTQhu6-7xhvvDI&libraries=visualization&callback=initMap">
 </script>
+
 
 </body>
 </html>
