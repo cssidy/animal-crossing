@@ -61,7 +61,32 @@
             center: {lat: 44.041244, lng: -72.599289},
             mapTypeId: 'satellite'
         });
+        
+        
+        fetch('assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json').then(function(response) {
+          response.json().then(function(json) {
+            let heatMapData = [];
+                console.log(json.features[2].geometry.coordinates);
 
+                for (let i = 0; i < json.features.length; i++) {
+                    console.log(json.features[i].geometry.coordinates);
+                    let coords = json.features[i].geometry.coordinates;
+                    let latLng = new google.maps.LatLng(coords[1], coords[0]);
+                    heatMapData.push(latLng);
+                }
+
+                heatmap = new google.maps.visualization.HeatmapLayer({
+                    data: heatMapData,
+                    map: map,
+                    maxIntensity: maxI,
+                    radius: rad,
+                    opacity: opac
+                });
+          });
+        });
+    }
+
+        /*
         fetch("assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json").then(response => response.json())
             .then(function(json) {
                 let heatMapData = [];
@@ -81,13 +106,14 @@
                     radius: rad,
                     opacity: opac
                 });
-            }
-    }
+            });
+            */
+    
+    
+    
 </script>
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgHBFFMALSRVnZ94XYGTQhu6-7xhvvDI&libraries=visualization&callback=initMap">
-</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrgHBFFMALSRVnZ94XYGTQhu6-7xhvvDI&libraries=visualization&callback=initMap"></script>
 
 
 </body>
