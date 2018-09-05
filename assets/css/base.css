@@ -19,14 +19,10 @@ body {
 }
 
 nav {
-    position: absolute;
-    top: 10px;
-    left: 10px;
 }
 
 @media (min-width: 600px) {
     nav {
-        top: 50px;
     }
 }
 
@@ -35,6 +31,16 @@ nav a {
     color: #fff;
     background-color: #C17767;
     padding: 5px 10px;
+}
+
+.report-btn {
+    background-color: #9AADBF;
+    color: #210203;
+}
+
+.report-btn:hover {
+    background-color: #506F88;
+    color: #210203;
 }
 
 h1 {
