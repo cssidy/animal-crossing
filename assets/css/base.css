@@ -23,18 +23,27 @@ nav {
     background-color: #E7D8CA;
 }
 
+nav span {
+    font-size: 80%;
+}
+
+nav a {
+    color: mediumturquoise;
+}
+
 .report-btn {
-    background-color: #9AADBF;
+    background-color: paleturquoise;
     color: #210203;
     border-radius: 4px;
     padding: 8px;
     margin: 2em 0;
     width: 300px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .report-btn:hover {
-    background-color: #506F88;
+    background-color: mediumturquoise;
     color: #210203;
 }
 
