@@ -49,7 +49,7 @@
         map = new google.maps.Map(document.getElementById('map'), {
             zoom: 8,
             center: {lat: 44.0153371, lng: -73.16734},
-            mapTypeId: 'terrain'
+            mapTypeId: 'satellite'
         });
 
         fetch("assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json").then(response => response.json())
