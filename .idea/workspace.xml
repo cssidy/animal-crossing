@@ -19,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="225">
+              <caret line="33" column="161" selection-start-line="33" selection-start-column="161" selection-end-line="33" selection-end-column="161" />
             </state>
           </provider>
         </entry>
@@ -219,12 +219,12 @@
       <workItem from="1533764176693" duration="4318000" />
       <workItem from="1534210830323" duration="7166000" />
       <workItem from="1535909103884" duration="562000" />
-      <workItem from="1535909790342" duration="4992000" />
+      <workItem from="1535909790342" duration="5874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24890000" />
+    <option name="totallyTimeSpent" value="25772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="175" y="232" width="2205" height="824" extended-state="0" />
@@ -444,13 +444,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/leaflet.heat.js" />
     <entry file="file://$PROJECT_DIR$/rats.html" />
     <entry file="file://$PROJECT_DIR$/experimental.html" />
-    <entry file="file://$PROJECT_DIR$/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -486,10 +479,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="33" column="161" selection-start-line="33" selection-start-column="161" selection-end-line="33" selection-end-column="161" />
         </state>
       </provider>
     </entry>
