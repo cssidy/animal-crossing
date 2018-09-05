@@ -25,6 +25,8 @@
 </head>
 <body>
 
+<div id="map"></div>
+
 <main>
     <section class="title_container">
         <h1 class="title">appfauna</h1>
@@ -35,8 +37,6 @@
         </nav>
     </section>
 </main>
-
-<div id="map"></div>
 
 <script>
     const maxI = 10, rad = 6, opac = .6;
@@ -70,6 +70,11 @@
                 });
             });
     }
+
+    const doc = document.querySelector('html');
+    doc.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+    };
 
 </script>
 </body>
