@@ -1,13 +1,13 @@
 
 body {
     font-family: "Roboto", Helvetica, sans-serif;
+    background-color: #D3B99F;
     color: #210203;
 }
 
 .title_container {
     overflow: hidden;
     height: 80px;
-    background-color: #D3B99F;
     text-align: right;
 }
 
@@ -19,7 +19,6 @@ body {
 }
 
 nav {
-    background-color: #D3B99F;
     padding: 1em;
 }
 
