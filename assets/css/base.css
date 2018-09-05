@@ -1,6 +1,6 @@
 
 body {
-    font-family: "Roboto", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     background-color: #D3B99F;
     color: #210203;
 }
@@ -74,12 +74,8 @@ nav a:hover, .title_container h3 a:hover {
     }
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Goudy Bookletter 1911", Georgia, serif;
-}
-
-h2, h3, h4, h5, h6, p {
-    font-family: Helvetica, sans-serif;
 }
 
 .special_message {
