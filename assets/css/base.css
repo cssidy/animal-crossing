@@ -35,7 +35,11 @@ nav span {
     font-size: 80%;
 }
 
-nav a, .title_container h3 a {
+.title_container h3 a {
+    color: paleturquoise;
+}
+
+nav a {
     color: mediumturquoise;
 }
 
