@@ -1,8 +1,6 @@
 
 body {
     font-family: Helvetica, sans-serif;
-    background-color: #D3B99F;
-    color: #210203;
 }
 
 .title_container {
@@ -14,7 +12,6 @@ body {
 .title_container h1 {
     font-size: 70px;
     margin: 13px 0 0 0;
-    color: #6D98BA;
     font-weight: inherit;
 }
 
@@ -28,7 +25,6 @@ body {
 
 nav {
     padding: 1em;
-    background-color: #E7D8CA;
 }
 
 nav span {
