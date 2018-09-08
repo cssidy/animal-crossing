@@ -74,12 +74,12 @@
       <find>0,0</find>
       <find>{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[0,0]}</find>
       <find>&quot;COMMENT&quot;:&quot;{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[0,0]}&quot;</find>
-      <find>&quot;type&quot;: &quot;Feature&quot;,</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[0,0]}</replace>
       <replace>&quot;COMMENT&quot;:&quot;&quot;</replace>
-      <replace>&quot;coordinates&quot;: []</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -163,6 +163,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&gt;&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
