@@ -23,6 +23,7 @@
 </head>
 <body>
 
+<p id="geoOutput"></p>
 
 <div id="map"></div>
 <!--
@@ -53,18 +54,44 @@
 
 <script>
     const maxI = 10, rad = 20, opac = .6;
+    let latitude = 0;
+    let longitude = 0;
     let map, heatmap;
+
+
+    // get geolocation from user's device
+    // Note: This example requires that you consent to location sharing when prompted by your browser.
+    function getGeo() {
+        const output = document.getElementById("geoOutput");
+        if (!navigator.geolocation) {
+            output.innerHTML = "<p>Geolocation is not supported by your browser/device.</p>";
+            return;
+        }
+        function success(position) {
+            latitude = position.coords.latitude;
+            longitude = position.coords.longitude;
+        }
+        function errorCallback(error) {
+            output.innerHTML = '<p>There was an error obtaining your position.</p>';
+            console.log('ERROR CODE: ' + error.code + ': ' + error.message);
+        }
+        output.innerHTML = "<p>Asking for permission...</p>";
+        navigator.geolocation.getCurrentPosition(success, errorCallback);
+    }
+
+    getGeo();
+
+
 
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
             zoom: 8,
-            center: {lat: 44.041244, lng: -72.599289},
+            center: {lat: latitude, lng: longitude},
             mapTypeId: 'satellite'
         });
         
-        
-        fetch('assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json').then(function(response) {
-          response.json().then(function(json) {
+        fetch('assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json').then(response => response.json())
+          .then(function(json) {
             let heatMapData = [];
                 console.log(json.features[2].geometry.coordinates);
 
@@ -82,32 +109,9 @@
                     radius: rad,
                     opacity: opac
                 });
-          });
-        });
+            });
     }
 
-        /*
-        fetch("assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json").then(response => response.json())
-            .then(function(json) {
-                let heatMapData = [];
-                console.log(json.features[2].geometry.coordinates);
-
-                for (let i = 0; i < json.features.length; i++) {
-                    console.log(json.features[i].geometry.coordinates);
-                    let coords = json.features[i].geometry.coordinates;
-                    let latLng = new google.maps.LatLng(coords[1], coords[0]);
-                    heatMapData.push(latLng);
-                }
-
-                heatmap = new google.maps.visualization.HeatmapLayer({
-                    data: heatMapData,
-                    map: map,
-                    maxIntensity: maxI,
-                    radius: rad,
-                    opacity: opac
-                });
-            });
-            */
     
     
     
