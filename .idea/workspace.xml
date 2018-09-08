@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea482a80-f11f-45eb-8f04-ed23573c8230" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+            <state relative-caret-position="469">
+              <caret line="103" column="71" lean-forward="true" selection-start-line="103" selection-start-column="71" selection-end-line="103" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -48,8 +47,8 @@
       <file leaf-file-name="VT_VehicleAnimal_Collisions__2006.geojson.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1455">
-              <caret line="97" column="7" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
+            <state relative-caret-position="195">
+              <caret line="97" column="24" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -96,11 +95,11 @@
         <option value="$PROJECT_DIR$/experimental.html" />
         <option value="$PROJECT_DIR$/form.html" />
         <option value="$PROJECT_DIR$/info.html" />
-        <option value="$PROJECT_DIR$/assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/report.html" />
         <option value="$PROJECT_DIR$/assets/css/base.css" />
         <option value="$PROJECT_DIR$/assets/js/common.js" />
+        <option value="$PROJECT_DIR$/assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -201,12 +200,12 @@
       <workItem from="1534210830323" duration="7166000" />
       <workItem from="1535909103884" duration="562000" />
       <workItem from="1535909790342" duration="10381000" />
-      <workItem from="1536374158623" duration="357000" />
+      <workItem from="1536374158623" duration="818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30636000" />
+    <option name="totallyTimeSpent" value="31097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="237" y="279" width="2205" height="824" extended-state="0" />
@@ -426,13 +425,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/leaflet.heat.js" />
     <entry file="file://$PROJECT_DIR$/rats.html" />
     <entry file="file://$PROJECT_DIR$/experimental.html" />
-    <entry file="file://$PROJECT_DIR$/assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="7" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -459,10 +451,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="469">
+          <caret line="103" column="71" lean-forward="true" selection-start-line="103" selection-start-column="71" selection-end-line="103" selection-end-column="71" />
         </state>
       </provider>
     </entry>

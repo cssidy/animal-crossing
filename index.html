@@ -23,7 +23,8 @@
 </head>
 <body>
 
-<p id="geoOutput"></p>
+<section id="geoOutput"></section>
+<section id="counter"></section>
 
 <div id="map"></div>
 <!--
@@ -94,6 +95,10 @@
           .then(function(json) {
             let heatMapData = [];
                 console.log(json.features[2].geometry.coordinates);
+                console.log(json.features.length);
+
+                const counter = document.getElementById('counter');
+                counter.innerHTML = "<p>" + json.features.length + "</p>";
 
                 for (let i = 0; i < json.features.length; i++) {
                     console.log(json.features[i].geometry.coordinates);
