@@ -19,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="505">
+              <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -74,12 +74,12 @@
       <find>0,0</find>
       <find>{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[0,0]}</find>
       <find>&quot;COMMENT&quot;:&quot;{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[0,0]}&quot;</find>
-      <find />
+      <find>&quot;type&quot;: &quot;Feature&quot;,</find>
     </findStrings>
     <replaceStrings>
       <replace>{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[0,0]}</replace>
       <replace>&quot;COMMENT&quot;:&quot;&quot;</replace>
-      <replace />
+      <replace>&quot;coordinates&quot;: []</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -202,12 +202,12 @@
       <workItem from="1534210830323" duration="7166000" />
       <workItem from="1535909103884" duration="562000" />
       <workItem from="1535909790342" duration="10381000" />
-      <workItem from="1536374158623" duration="1146000" />
+      <workItem from="1536374158623" duration="1399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31425000" />
+    <option name="totallyTimeSpent" value="31678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="237" y="279" width="2205" height="824" extended-state="0" />
@@ -462,8 +462,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="505">
+          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
         </state>
       </provider>
     </entry>
