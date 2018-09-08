@@ -18,6 +18,11 @@
             height: 100%;
             margin: 0;
             padding: 0;
+            font-family: 'Goudy Bookletter 1911', Georgia, "Times New Roman", serif;
+        }
+
+        section {
+            padding: 1em;
         }
     </style>
 </head>
@@ -96,14 +101,13 @@
         fetch('assets/js/VT_VehicleAnimal_Collisions__2006.geojson.json').then(response => response.json())
           .then(function(json) {
             let heatMapData = [];
-                console.log(json.features[2].geometry.coordinates);
-                console.log(json.features.length);
+                // console.log(json.features[2].geometry.coordinates);
 
                 const counter = document.getElementById('counter');
-                counter.innerHTML = "<p>" + json.features.length + "</p>";
+                counter.innerHTML = "<p>Roadkill count: " + json.features.length + "</p>";
 
                 for (let i = 0; i < json.features.length; i++) {
-                    console.log(json.features[i].geometry.coordinates);
+                    // console.log(json.features[i].geometry.coordinates);
                     let coords = json.features[i].geometry.coordinates;
                     let latLng = new google.maps.LatLng(coords[1], coords[0]);
                     heatMapData.push(latLng);
