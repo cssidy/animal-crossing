@@ -74,12 +74,12 @@
       <find>0,0</find>
       <find>{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[0,0]}</find>
       <find>&quot;COMMENT&quot;:&quot;{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[0,0]}&quot;</find>
-      <find>&quot;type&quot;: &quot;Feature&quot;,</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[0,0]}</replace>
       <replace>&quot;COMMENT&quot;:&quot;&quot;</replace>
-      <replace>&quot;coordinates&quot;: []</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -115,8 +115,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="237" />
-    <option name="y" value="279" />
+    <option name="x" value="233" />
+    <option name="y" value="417" />
     <option name="width" value="2205" />
     <option name="height" value="824" />
   </component>
