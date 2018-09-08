@@ -73,7 +73,9 @@
             longitude = position.coords.longitude;
         }
         function errorCallback(error) {
-            output.innerHTML = '<p>There was an error obtaining your position.</p>';
+            latitude = 44.2601;
+            longitude = -72.5754;
+            output.innerHTML = '<p>There was an error obtaining your position, so your default view will be Montpelier, VT.</p>';
             console.log('ERROR CODE: ' + error.code + ': ' + error.message);
         }
         output.innerHTML = "<p>Asking for permission...</p>";
